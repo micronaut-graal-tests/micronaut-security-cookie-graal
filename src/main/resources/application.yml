@@ -2,18 +2,10 @@ micronaut:
   application:
     name: micronaut-security-cookie-graal
   security:
-    endpoints:
-      login:
-        enabled: true
-      logout:
-        enabled: true
+    redirect:
+      login-failure: /login/authFailed
     token:
       jwt:
-        bearer:
-          enabled: false
-        cookie:
-          enabled: true
-          loginFailureTargetUrl: /login/authFailed
         signatures:
           secret:
             generator:
