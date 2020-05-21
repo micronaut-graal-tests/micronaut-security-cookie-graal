@@ -6,10 +6,6 @@ micronaut:
       login-failure: /login/authFailed
     token:
       jwt:
-        bearer:
-          enabled: false
-        cookie:
-          enabled: true
         signatures:
           secret:
             generator:
