@@ -2,11 +2,6 @@ micronaut:
   application:
     name: micronaut-security-cookie-graal
   security:
-    endpoints:
-      login:
-        enabled: true
-      logout:
-        enabled: true
     token:
       jwt:
         bearer:
