@@ -44,4 +44,5 @@ java {
 
 nativeImage {
     imageName('security-cookie')
+    args = ["-H:+StaticExecutableWithDynamicLibC"]
 }
