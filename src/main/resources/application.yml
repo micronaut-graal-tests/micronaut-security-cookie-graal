@@ -7,6 +7,8 @@ micronaut:
       login-failure: /login/authFailed
     token:
       jwt:
+        cookie:
+          cookie-secure: false
         signatures:
           secret:
             generator:
